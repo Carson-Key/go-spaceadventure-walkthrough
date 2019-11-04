@@ -21,7 +21,7 @@ func printGreeting(name string) {
 func travel() {
 	var choice string
 	for choice != "Y" && choice != "N" {
-		choice = getTravelChoice()
+		choice = responseToPrompt("Shall I randomly choose a planet for you to visit? (Y or N)")
 		if choice == "Y" {
 			travelToRandomPlanet()
 		} else if choice == "N" {
@@ -33,12 +33,12 @@ func travel() {
 	}
 }
 
-func getTravelChoice() string {
-	var choice string
-	fmt.Println("Shall I randomly choose a planet for you to visit? (Y or N)")
-	fmt.Scan(&choice)
-	return choice
-}
+// func getTravelChoice() string {
+// 	var choice string
+// 	fmt.Println("Shall I randomly choose a planet for you to visit? (Y or N)")
+// 	fmt.Scan(&choice)
+// 	return choice
+// }
 
 // func getName() string{
 // 	var name string
