@@ -1,9 +1,9 @@
-package main
+package spaceadventure
 
 import "fmt"
 
-func main() {
-	printWelcome()
+func Start() {
+  printWelcome()
 	printGreeting(responseToPrompt("What is your name?"))
 	fmt.Println("Let's go on an adventure!")
 	travel()
